@@ -10,3 +10,4 @@ from PIL import *
 def pictureDisplay():
     image = Image.open("grouppicture.jpg")
     image.show(title='Us at the former Lindner building')
+    #This is the picture function
