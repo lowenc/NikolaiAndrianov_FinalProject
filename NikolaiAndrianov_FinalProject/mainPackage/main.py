@@ -9,12 +9,6 @@
 
 #main.py
 from functionsPackage.functions import *
-jsonExtract()
 
-import json
+print(jsonExtract())
 
-with open('../EncryptedGroupHints Spring 2023 Section 001.json') as f:
-    data = json.load(f)
-lineValues = data['Nikolai Andrianov']
-
-print(lineValues)
