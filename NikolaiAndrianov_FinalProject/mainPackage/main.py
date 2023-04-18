@@ -10,3 +10,12 @@
 #main.py
 from picturePackage.picture import *
 jsonExtract()
+
+import json
+
+with open('../EncryptedGroupHints Spring 2023 Section 001.json') as f:
+    data = json.load(f)
+    
+lineValues = data['Nikolai Andrianov']
+
+print(lineValues)
