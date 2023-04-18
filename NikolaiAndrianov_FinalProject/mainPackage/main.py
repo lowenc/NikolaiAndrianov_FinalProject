@@ -8,3 +8,5 @@
 #Anything else that's relevant:
 
 #main.py
+from picturePackage.picture import *
+jsonExtract()

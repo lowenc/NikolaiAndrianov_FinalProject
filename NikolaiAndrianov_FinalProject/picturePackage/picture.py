@@ -9,7 +9,14 @@
 
 # picture.py
 from PIL import *
+import json
+import requests
 def pictureDisplay():
     image = Image.open("grouppicture.jpg")
     image.show(title='Us at the former Lindner building')
     #This is the picture function
+def jsonExtract():
+    response = requests.get('EncryptedGroupHints Spring 2023 Section 001.json')
+    json_string = response.content
+    parsed_json = json.loads(json_string)
+    print(parsed_json)
