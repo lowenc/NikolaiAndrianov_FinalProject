@@ -13,3 +13,4 @@
 from functionsPackage.functions import *
 
 txtExtract()
+pictureDisplay()

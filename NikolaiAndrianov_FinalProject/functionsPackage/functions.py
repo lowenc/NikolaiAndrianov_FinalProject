@@ -3,19 +3,20 @@
 #Assignment Title: Final Project
 #Course: IS 4010
 #Semester/Year: Spring 2023
-#Brief Description: This project extracts data from a json and txt file and compares the two lists
+#Brief Description: This project extracts data from a json and txt file and compares the two lists. 
+#It also shows an image of our group at the location
 #Citations: https://www.geeksforgeeks.org/python-converting-all-strings-in-list-to-integers/
 # https://www.geeksforgeeks.org/python-removing-newline-character-from-string/
 # https://bobbyhadz.com/blog/python-remove-newline-from-list
 #Anything else that's relevant:
 
 # functions.py
-from PIL import *
+from PIL import Image
 import json
 
 #  This is the picture method
 def pictureDisplay():
-    image = Image.open("grouppicture.jpg")
+    image = Image.open("../grouppicture.jpg")
     image.show(title='Us at the former Lindner building')
     
 #  This method extracts the JSON and puts it into a list called 'lineValues'
